@@ -12,8 +12,12 @@ public class POOAct03 {
         
         int suma = os.sumar(o1);
         int resta = os.restar(o1);
+        int mult = os.multiplicar(o1);
+        int div = os.dividir(o1);
         System.out.println("Suma de los numeros ingresados: " + suma);
-        System.out.println("Suma de los numeros ingresados: " + resta);
+        System.out.println("Resta de los numeros ingresados: " + resta);
+        System.out.println("Multiplicacion de los numeros ingresados: " + mult);
+        System.out.println("Division de los numeros ingresados: " + div);
     }
 
 }

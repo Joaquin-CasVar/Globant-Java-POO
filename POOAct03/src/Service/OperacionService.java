@@ -18,12 +18,32 @@ public class OperacionService {
     }
 
     public int sumar(Operacion o1) {
-        int suma = o1.getNumero1() + o1.getNumero2();
-        return suma;
+        int res = o1.getNumero1() + o1.getNumero2();
+        return res;
     }
 
     public int restar(Operacion o1) {
-        int resta = o1.getNumero1() - o1.getNumero2();
-        return resta;
+        int res = o1.getNumero1() - o1.getNumero2();
+        return res;
+    }
+
+    public int multiplicar(Operacion o1) {
+        if (o1.getNumero1() == 0 || o1.getNumero2() == 0) {
+            System.out.println("ERROR. Intento multiplicar por cero");
+            int res = 0;
+            return res;
+        }
+        int res = o1.getNumero1() * o1.getNumero2();
+        return res;
+    }
+
+    public int dividir(Operacion o1) {
+        if (o1.getNumero2() == 0) {
+            System.out.println("ERROR. Intento dividir por cero");
+            int res = 0;
+            return res;
+        }
+        int res = o1.getNumero1() / o1.getNumero2();
+        return res;
     }
 }
